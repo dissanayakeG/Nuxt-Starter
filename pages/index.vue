@@ -21,4 +21,8 @@ console.log($myPlugin("Madusanka"));
 definePageMeta({
 	middleware: "local",
 });
+
+//calling server api,routes and middleware
+const { data } = await useFetch('/api/hello')
+console.log('API-',data.value)
 </script>
